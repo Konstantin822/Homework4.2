@@ -11,18 +11,9 @@ public abstract class Animal {
         amount++;
     }
 
-    public void run(int distance) {
-        if (distance <= runDistance) {
-            System.out.println(this.name + " ran " + distance + " m.");
-        } else {
-            System.out.println("Too far.");
-        }
+    abstract void run(int distance);
+
+    abstract void swim(int distance);
+
     }
-    public void swim(int distance) {
-        if (distance <= swimDistance) {
-            System.out.println(this.name + " swam " + distance + " m.");
-        } else {
-            System.out.println("Too far");
-        }
-    }
-}
+
